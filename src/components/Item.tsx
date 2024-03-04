@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Box, Button, Link, Stack, Tooltip } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -30,18 +31,18 @@ const Item: React.FC<ItemProps> = ({ data }) => {
         padding: '15px',
         boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
         transition: 'all 0.5s ease-in-out',
-        animation: 'glowPulse 2s infinite',
-        '@keyframes glowPulse': {
+        animation: 'Pulse 0.5s infinite',
+        '@keyframes Pulse': {
           '0%, 100%': {
-            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 10px rgba(255, 168, 76, 0.6)',
+            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 0px rgba(255, 168, 76, 0.6)',
           },
           '50%': {
-            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 15px rgba(255, 168, 76, 0.9)',
+            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 8px rgba(255, 168, 76, 0.9)',
           },
         },
         '&:hover': {
           boxShadow: '0 12px 24px rgba(0,0,0,0.5)',
-          transform: 'scale(1.4)',
+          transform: 'scale(1.1)',
           transition: 'transform 0.2s ease-in-out',
         },
         '@media (min-width: 600px)': {

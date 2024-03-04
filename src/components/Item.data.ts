@@ -17,7 +17,7 @@ export const data : Array<BoxData>=[
         id:3,
         logo:"../images/lightsssss.png",
         instagram:"https://www.instagram.com/babyshark_nigeria?igsh=MTFlZnEzazFocnMycQ==",
-        facebook:"https://www.instagram.com/matilda_light.ng?igsh=NDR1ZHVscXNxd200",
+        facebook:"https://www.facebook.com/share/vXEhSfREtwwfFEah/?mibextid=QwDbR1",
     },
 
     {
@@ -30,13 +30,13 @@ export const data : Array<BoxData>=[
         id:6,
         logo:"../images/Imzaa.png",
         instagram:"https://www.instagram.com/imza_nigeria?igsh=amV4cTRpY3U5cTVk",
-        facebook:"",
+        facebook:"https://www.facebook.com/share/P7DQSUdwBgVApB9N/?mibextid=QwDbR1",
     },
     {
         id:7,
         logo:"../images/Babyshark.png",
         instagram:"https://www.instagram.com/babyshark_nigeria?igsh=MTFlZnEzazFocnMycQ==",
-        facebook:"",
+        facebook:"https://www.facebook.com/share/W2eXgt3G4XZEBQXJ/?mibextid=QwDbR1",
     },
  
 ]
