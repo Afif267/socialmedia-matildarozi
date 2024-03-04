@@ -7,7 +7,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { useEffect, useState } from 'react';
 import { BoxData } from '@/interface/boxdata';
 
-
 interface ItemProps {
   data: BoxData;
 }
@@ -46,7 +45,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
         padding: '15px',
         boxShadow: '8px 8px 16px rgba(0,0,0,0.2)',
         transition: 'all 0.5s ease-in-out',
-        animation: 'Pulse 1s infinite',
+        animation: 'Pulse 4s infinite',
         '@keyframes Pulse': {
           '0%, 100%': {
             boxShadow: `0px 8px 8px ${boxShadowColor}`,
@@ -98,7 +97,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
                 },
               }}
             >
-              <InstagramIcon sx={{ color: 'red', background: 'transparent', transform: 'scale(1.5)' }} />
+              <InstagramIcon sx={{ color: '#C42581', background: 'transparent', transform: 'scale(1.5)' }} />
             </Button>
           </Link>
         </Tooltip>

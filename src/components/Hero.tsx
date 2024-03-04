@@ -69,6 +69,7 @@ const Hero: React.FC = () => {
                   data={item} 
                 />
             ))}
+            
         </Container>
     );
 }
