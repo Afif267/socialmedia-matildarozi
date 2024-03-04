@@ -19,7 +19,19 @@ const Hero: React.FC = () => {
                 sx={{
                     width: '80%',
                     maxWidth: '300px',
-                    marginBottom: '20px'
+                    marginBottom: '20px',
+                    animation: 'pulse 1s infinite',
+                    '@keyframes pulse': {
+                        '0%': {
+                            transform: 'scale(1)',
+                        },
+                        '50%': {
+                            transform: 'scale(1.1)',
+                        },
+                        '100%': {
+                            transform: 'scale(1)',
+                        },
+                    },
                 }}
                 src='../images/Mainlogo.png'
                 alt="main logo"

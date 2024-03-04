@@ -30,16 +30,26 @@ const Item: React.FC<ItemProps> = ({ data }) => {
         padding: '15px',
         boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
         transition: 'all 0.5s ease-in-out',
+        animation: 'glowPulse 2s infinite',
+        '@keyframes glowPulse': {
+          '0%, 100%': {
+            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 10px rgba(255, 168, 76, 0.6)',
+          },
+          '50%': {
+            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 15px rgba(255, 168, 76, 0.9)',
+          },
+        },
         '&:hover': {
           boxShadow: '0 12px 24px rgba(0,0,0,0.5)',
-          transform: 'scale(1.2)',
-          transition: 'transform 0.3s ease-in-out',
+          transform: 'scale(1.4)',
+          transition: 'transform 0.2s ease-in-out',
         },
         '@media (min-width: 600px)': {
           flexDirection: 'row',
           justifyContent: 'space-evenly',
           padding: '10px',
         },
+        
       }}
     >
       <img src={data.logo} alt="Logo" style={{ height: 'auto', maxHeight: '50px', marginBottom: '2px', width: '110px' }} />
