@@ -27,7 +27,7 @@ const useDarkMode = () => {
 };
 const Hero: React.FC = () => {
    const isDarkMode = useDarkMode();
-  const imageSrc = isDarkMode ? '../images/Imzaa_dark.png' : '../images/Imzaa.png';
+  const imageSrc = isDarkMode ? '../imagesdark/Mainlogo.png' : '../images/logo.png';
     return (
         <Container maxWidth="sm" sx={{
             display: 'flex',
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
                 src={imageSrc}
                 alt="main logo"
             />
-            <Typography variant="body1" color={isDarkMode? "white":'black'} sx={{ textAlign: 'center', marginBottom: '20px' }}>
+            <Typography variant="h5" color={isDarkMode? "white":'black'} sx={{ textAlign: 'center', marginBottom: '20px' }}>
                 {`Visit us on social media`}
             </Typography>
             

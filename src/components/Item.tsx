@@ -1,20 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
+'use client'
 import React from 'react';
 import { Box, Button, Link, Stack, Tooltip } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { useEffect, useState } from 'react';
+import { BoxData } from '@/interface/boxdata';
 
-interface BoxData {
-  logo: string;
-  facebook: string;
-  instagram: string;
-}
 
 interface ItemProps {
   data: BoxData;
 }
+const useDarkMode = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+    const matchMedia = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsDarkMode(e.matches);
+    };
+    // Initial check
+    setIsDarkMode(matchMedia.matches);
+    matchMedia.addEventListener('change', handleChange);
+    return () => matchMedia.removeEventListener('change', handleChange);
+  }, []);
+  return isDarkMode;
+};
 
 const Item: React.FC<ItemProps> = ({ data }) => {
+  const isDarkMode = useDarkMode();
+  const logoSrc = isDarkMode ? data.logoDark : data.logo;
+  const boxShadowColor = isDarkMode ? 'white' : 'black';
   return (
     <Box
       sx={{
@@ -22,22 +37,22 @@ const Item: React.FC<ItemProps> = ({ data }) => {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: 'linear-gradient(45deg, #0FA0E6, #FF8E53)', // Gradient background
+        background: 'linear-gradient(45deg, #0FA0E6)', 
         borderRadius: '15px',
         width: '100%',
         height: '80px',
         maxWidth: '300px',
         marginBottom: '15px',
         padding: '15px',
-        boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
+        boxShadow: '8px 8px 16px rgba(0,0,0,0.2)',
         transition: 'all 0.5s ease-in-out',
-        animation: 'Pulse 0.5s infinite',
+        animation: 'Pulse 1s infinite',
         '@keyframes Pulse': {
           '0%, 100%': {
-            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 0px rgba(255, 168, 76, 0.6)',
+            boxShadow: `0px 8px 8px ${boxShadowColor}`,
           },
           '50%': {
-            boxShadow: '0 0 8px rgba(0,0,0,0.2), 0 0 8px rgba(255, 168, 76, 0.9)',
+            boxShadow: `0px 0px 8px ${boxShadowColor}`,
           },
         },
         '&:hover': {
@@ -53,7 +68,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
         
       }}
     >
-      <img src={data.logo} alt="Logo" style={{ height: 'auto', maxHeight: '50px', marginBottom: '2px', width: '110px' }} />
+      <img src={logoSrc} alt="Logo" style={{ height: 'auto', maxHeight: '50px', marginBottom: '2px', width: '110px' }} />
       <Stack direction="row" gap={4}>
         <Tooltip title="Visit our Facebook page" arrow>
           <Link href={data.facebook} underline="none">
