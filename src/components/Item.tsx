@@ -97,7 +97,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
                 },
               }}
             >
-              <InstagramIcon sx={{ color: 'white',borderRadius:'10%',  background: 'linear-gradient(39deg, rgba(255,188,65,1) 0%, rgba(193,41,166,1) 18%, rgba(221,40,125,1) 63%, rgba(147,28,156,1) 89%, rgba(155,26,183,1) 100%)', transform: 'scale(1.12)' }} />
+              <InstagramIcon sx={{ color: 'white',borderRadius:'20%',  background: 'linear-gradient(39deg, rgba(255,188,65,1) 0%, rgba(193,41,166,1) 18%, rgba(221,40,125,1) 63%, rgba(147,28,156,1) 89%, rgba(155,26,183,1) 100%)', transform: 'scale(1.15)' }} />
             </Button>
           </Link>
         </Tooltip>
