@@ -3,21 +3,21 @@ import type { BoxData } from "../interface/boxdata";
 export const data : Array<BoxData>=[
     {
         id:1,
-        logo:"../images/electronicsrozi.png",
+        logo:"../images/6.png",
         logoDark:"../imagesdark/electronics.png",
         instagram:"https://www.instagram.com/matildarozi?igsh=OGZxYmExYnoyOGtv",
         facebook:"https://www.facebook.com/matildarozilimited",
     },
     {
         id:2,
-        logo:"../images/Furniturehouserozi.png",
+        logo:"../images/7.png",
         logoDark:"../imagesdark/furniturehouse.png",
         instagram:"https://www.instagram.com/furniture_house.ng?igsh=Y3YxeWR6MDZieGdl",
         facebook:"https://www.facebook.com/furniturehouse.org",
     },
        {
         id:3,
-        logo:"../images/light.png",
+        logo:"../images/5.png",
         logoDark:"../imagesdark/logoligth.png",
         instagram:"https://www.instagram.com/babyshark_nigeria?igsh=MTFlZnEzazFocnMycQ==",
         facebook:"https://www.facebook.com/share/vXEhSfREtwwfFEah/?mibextid=QwDbR1",

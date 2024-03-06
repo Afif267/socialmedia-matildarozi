@@ -67,7 +67,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
         
       }}
     >
-      <img src={logoSrc} alt="Logo" style={{ height: 'auto', maxHeight: '50px', marginBottom: '2px', width: '110px' }} />
+      <img src={logoSrc} alt="Logo" style={{ height: 'auto', maxHeight: '50px', marginBottom: '2px', width: '130px' }} />
       <Stack direction="row" gap={4}>
         <Tooltip title="Visit our Facebook page" arrow>
           <Link href={data.facebook} underline="none">
