@@ -70,6 +70,7 @@ const Hero: React.FC = () => {
         alt="main logo"
       />
       <Typography
+<<<<<<< HEAD
         variant="h4"
         color={isDarkMode ? "white" : "black"}
         sx={{ marginBottom: "10px" }}
@@ -79,6 +80,8 @@ const Hero: React.FC = () => {
         <DarkModeIcon />
       </Typography>
       <Typography
+=======
+>>>>>>> 4e5ab6ce9e44f70f8fdd381d7bc7be9759f1485e
         variant="body1"
         color={isDarkMode ? "white" : "black"}
         sx={{ textAlign: "center", marginBottom: "20px" }}
@@ -97,7 +100,11 @@ const Hero: React.FC = () => {
           color={isDarkMode ? "white" : "black"}
           sx={{ textAlign: "center" }}
         >
+<<<<<<< HEAD
           Copyright © 2024 A.Ismail
+=======
+          Copyright © 2024 A.Isamil
+>>>>>>> 4e5ab6ce9e44f70f8fdd381d7bc7be9759f1485e
         </Typography>
       </Box>
     </Container>
