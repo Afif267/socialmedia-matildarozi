@@ -11,8 +11,8 @@ export const data: Array<BoxData> = [
   },
   {
     id: 2,
-    logo: "../images/6.png",
-    logoDark: "../imagesdark/electronics.png",
+    logo: "../images/12.png",
+    logoDark: "../imagesdark/13.png",
     instagram: "https://www.instagram.com/matildarozi?igsh=OGZxYmExYnoyOGtv",
     facebook: "https://www.facebook.com/matildarozilimited",
   },
