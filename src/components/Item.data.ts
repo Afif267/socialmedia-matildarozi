@@ -21,11 +21,7 @@ export const data: Array<BoxData> = [
     logo: "../images/matlidalightLM.png",
     logoDark: "../imagesdark/logoligth.png",
     instagram:
-<<<<<<< HEAD
       "https://www.instagram.com/matilda_light.ng?igsh=NDR1ZHVscXNxd200",
-=======
-      "https://www.instagram.com/babyshark_nigeria?igsh=MTFlZnEzazFocnMycQ==",
->>>>>>> 4e5ab6ce9e44f70f8fdd381d7bc7be9759f1485e
     facebook:
       "https://www.facebook.com/share/vXEhSfREtwwfFEah/?mibextid=QwDbR1",
   },
