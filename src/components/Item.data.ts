@@ -3,18 +3,18 @@ import type { BoxData } from "../interface/boxdata";
 export const data: Array<BoxData> = [
   {
     id: 1,
-    logo: "../images/6.png",
-    logoDark: "../imagesdark/electronics.png",
-    instagram: "https://www.instagram.com/matildarozi?igsh=OGZxYmExYnoyOGtv",
-    facebook: "https://www.facebook.com/matildarozilimited",
-  },
-  {
-    id: 2,
     logo: "../images/7.png",
     logoDark: "../imagesdark/furniturehouse.png",
     instagram:
       "https://www.instagram.com/furniture_house.ng?igsh=Y3YxeWR6MDZieGdl",
     facebook: "https://www.facebook.com/furniturehouse.org",
+  },
+  {
+    id: 2,
+    logo: "../images/6.png",
+    logoDark: "../imagesdark/electronics.png",
+    instagram: "https://www.instagram.com/matildarozi?igsh=OGZxYmExYnoyOGtv",
+    facebook: "https://www.facebook.com/matildarozilimited",
   },
   {
     id: 3,
