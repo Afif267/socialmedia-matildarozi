@@ -5,7 +5,6 @@ import Item from "./Item";
 import { BoxData } from "../interface/boxdata";
 import { data } from "./Item.data";
 import { useEffect, useState } from "react";
-// import RamadanKareem from "./RamadanKareem";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 const useDarkMode = () => {
@@ -97,7 +96,7 @@ const Hero: React.FC = () => {
           color={isDarkMode ? "white" : "black"}
           sx={{ textAlign: "center" }}
         >
-          Copyright © 2024 A.Isamil
+          Copyright © 2024 A.Ismail
         </Typography>
       </Box>
     </Container>
