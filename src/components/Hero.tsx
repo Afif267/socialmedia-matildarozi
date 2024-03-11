@@ -5,6 +5,8 @@ import Item from "./Item";
 import { BoxData } from "../interface/boxdata";
 import { data } from "./Item.data";
 import { useEffect, useState } from "react";
+// import RamadanKareem from "./RamadanKareem";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 const useDarkMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,6 +15,8 @@ const useDarkMode = () => {
     const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = (e: MediaQueryListEvent) => {
       setIsDarkMode(e.matches);
+      // Refresh the page on scheme change
+      window.location.reload();
     };
 
     // Initial check
@@ -25,6 +29,7 @@ const useDarkMode = () => {
 
   return isDarkMode;
 };
+
 const Hero: React.FC = () => {
   const isDarkMode = useDarkMode();
   const imageSrc = isDarkMode
@@ -65,7 +70,16 @@ const Hero: React.FC = () => {
         alt="main logo"
       />
       <Typography
-        variant="h5"
+        variant="h4"
+        color={isDarkMode ? "white" : "black"}
+        sx={{ marginBottom: "10px" }}
+      >
+        <DarkModeIcon />
+        Ramadan Kareem
+        <DarkModeIcon />
+      </Typography>
+      <Typography
+        variant="body1"
         color={isDarkMode ? "white" : "black"}
         sx={{ textAlign: "center", marginBottom: "20px" }}
       >
@@ -75,13 +89,15 @@ const Hero: React.FC = () => {
       {data.map((item: BoxData) => (
         <Item key={item.id} data={item} />
       ))}
+
+      {/* <RamadanKareem /> */}
       <Box sx={{ marginTop: "20px", marginBottom: "20px" }}>
         <Typography
           variant="body2"
           color={isDarkMode ? "white" : "black"}
           sx={{ textAlign: "center" }}
         >
-          Copyright © 2024 A.I
+          Copyright © 2024 A.Ismail
         </Typography>
       </Box>
     </Container>
