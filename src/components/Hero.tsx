@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
         alt="main logo"
       />
       <Typography
-        variant="h5"
+        variant="body1"
         color={isDarkMode ? "white" : "black"}
         sx={{ textAlign: "center", marginBottom: "20px" }}
       >
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
           color={isDarkMode ? "white" : "black"}
           sx={{ textAlign: "center" }}
         >
-          Copyright © 2024 A.I
+          Copyright © 2024 A.Isamil
         </Typography>
       </Box>
     </Container>
