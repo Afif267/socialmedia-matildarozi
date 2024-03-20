@@ -28,7 +28,7 @@ const useDarkMode = () => {
 const Item: React.FC<ItemProps> = ({ data }) => {
   const isDarkMode = useDarkMode();
   const logoSrc = isDarkMode ? data.logoDark : data.logo;
-  const boxShadowColor = isDarkMode ? "white" : "black";
+  const boxShadowColor = isDarkMode ? "rgb(198,46,45)" : "rgb(198,46,45)";
   return (
     <Box
       sx={{

@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
       </Typography>
       <Typography
         variant="body1"
-        color={isDarkMode ? "white" : "black"}
+        color={isDarkMode ? "rgb(198,46,45)" : "rgb(198,46,45)"}
         sx={{ textAlign: "center", marginBottom: "20px" }}
       >
         {`Visit us on social media`}
