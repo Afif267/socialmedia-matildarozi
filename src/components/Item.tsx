@@ -60,7 +60,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
           transition: "transform 0.2s ease-in-out",
           "& img": {
             // Classic animation for the image on hover
-            transform: "scale(1.1) rotate(360deg)",
+            transform: "scale(1.1) rotate(0deg)",
             transition: "transform 0.2s ease-in-out",
           },
         },
