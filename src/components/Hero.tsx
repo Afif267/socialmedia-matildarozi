@@ -73,9 +73,7 @@ const Hero: React.FC = () => {
         color={isDarkMode ? "white" : "black"}
         sx={{ marginBottom: "10px" }}
       >
-        <DarkModeIcon />
-        Ramadan Kareem
-        <DarkModeIcon />
+        Discount up to 20%
       </Typography>
       <Typography
         variant="body1"
